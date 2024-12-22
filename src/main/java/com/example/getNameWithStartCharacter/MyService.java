@@ -1,4 +1,4 @@
-package com.example.getNameWithPCharacter;
+package com.example.getNameWithStartCharacter;
 
 import org.springframework.stereotype.Service;
 
