@@ -31,3 +31,23 @@ public class MaskEmail {
     }
 }
 
+/*
+public class MaskEmail {
+    public static void main(String[] args) {
+        String email = "test@gmail.com";
+        String maskedEmail = emailMask(email);
+        System.out.println("This is maskedEmail : " + maskedEmail);
+    }
+
+    public static String emailMask(String email) {
+        String[] parts = email.split("@");
+        String username = parts[0];
+        String domain = parts[1];
+        String maskedEmail = username.charAt(0) + "*".repeat(username.length() - 1);
+        int dotIndex = domain.indexOf(".");
+        String domainName = domain.substring(0, dotIndex);
+        String domainExtension = domain.substring(dotIndex);
+        String maskedDomain = "*".repeat(domainName.length()) + domainExtension;
+        return maskedEmail + "@" + maskedDomain;
+    }
+}*/
